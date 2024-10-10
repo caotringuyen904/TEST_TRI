@@ -1,0 +1,135 @@
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-left: 100px;
+}
+
+.upload-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+}
+
+.upload-area {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  border: 6px dashed rgb(75, 238, 75);
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.9s ease;
+  animation: dash-animation 4s infinite linear; 
+}
+
+.upload-area.active {
+  background-color: #e0e0e0;
+}
+
+@keyframes dash-animation {
+  0% {
+    border-style: dashed;
+    border-color: rgb(19, 250, 19);
+  }
+  50% {
+    border-color: rgb(255, 51, 238); 
+  }
+  100% {
+    border-color: rgb(139, 226, 204); 
+  }
+}
+
+
+table {
+  width: 80%; 
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+
+
+.date-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.date-input {
+  display: flex;
+  gap: 10px;
+}
+
+.date-input label {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px;
+
+}
+
+.date-input input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.date-input input:hover {
+  border: 3px solid #080bf3;
+
+}
+
+.total-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction:row;
+  margin-bottom: 30px;
+  justify-content:flex-start;
+
+
+}
+
+.total-price button {
+  padding: 10px 30px;
+  background-color: #5d91f1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.total-price h3 {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-price button:hover {
+  background-color: #080bf3;
+
+}
+
+.total-price h3 {
+  margin: 0;
+}
+
+
+
+
+
