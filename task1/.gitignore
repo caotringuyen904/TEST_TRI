@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
+# Ignore package.json and package-lock.json
 package.json
 package-lock.json
+
